@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+
 #define LEN(arr) (sizeof(arr) / sizeof(arr[0]))
 
 int partition(int* arr, int startIndex, int endIndex)
@@ -44,7 +44,7 @@ int main()
     quick_sort(arr, 0, LEN(arr) - 1);
     for (int i = 0; i < LEN(arr); i++)
     {
-        cout << arr[i] << "\n";
+        std::cout << arr[i] << "\n";
     }
     return 0;
 }
