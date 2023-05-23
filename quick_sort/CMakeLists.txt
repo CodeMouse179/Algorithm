@@ -1,7 +1,5 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.26)
 
 project(QuickSort)
 
-add_executable(qs
-    main.cpp
-)
+add_executable(a main.cpp)
