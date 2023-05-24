@@ -29,7 +29,7 @@ bool is_prime_plusplus(int number)
 void __new_prime_array(bool* arr, int len)
 {
     std::memset(arr, true, sizeof(bool) * len);
-    for (int i = 2; i < len; i++)
+    for (int i = 2; i <= (int)std::sqrt(len); i++)
     {
         if (arr[i])
         {
