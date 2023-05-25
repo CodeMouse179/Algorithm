@@ -24,7 +24,14 @@ std::vector<std::string> get_project_names(const std::vector<std::string>& paths
         std::string name = item.substr(item.find("/") + 1);
         if (
             name == ".git" ||
-            name == "CMakeFiles"
+            name == "CMakeFiles" ||
+            name == ".vs" ||
+            name == "a.dir" ||
+            name == "x64" ||
+            name == "Debug" ||
+            name == "Release" ||
+            name == "MinSizeRel" ||
+            name == "RelWithDebInfo"
         ) continue;
         projects.push_back(name);
     }
@@ -35,7 +42,7 @@ std::string input_project_name()
 {
     std::cout << "input project name: ";
     std::string project_name;
-    std::cin >> project_name;
+    std::getline(std::cin, project_name);
     return project_name;
 }
 
@@ -74,7 +81,7 @@ int main()
     while (true)
     {
         std::string project_name = input_project_name();
-        if (project_name.size() == 0)
+        if (project_name.empty())
         {
             std::cout << "empty project name!\n";
             continue;

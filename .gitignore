@@ -16,3 +16,29 @@ _deps
 
 # a
 a
+
+.vs
+ALL_BUILD.vcxproj
+ALL_BUILD.vcxproj.filters
+ALL_BUILD.vcxproj.user
+ZERO_CHECK.vcxproj
+ZERO_CHECK.vcxproj.filters
+ZERO_CHECK.vcxproj.user
+x64
+Debug
+Release
+MinSizeRel
+RelWithDebInfo
+a.dir
+a.vcxproj
+a.vcxproj.filters
+a.vcxproj.user
+
+Algorithm.sln
+bubble_sort_project.sln
+factorial_project.sln
+fibonacci_project.sln
+gcd_lcm_project.sln
+prime_project.sln
+prime_factor_project.sln
+quick_sort_project.sln
